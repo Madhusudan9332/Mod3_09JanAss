@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrition Label</title>
+    <style>
+      html {
+        font-size: 16px;
+      }
+      * {
+        margin: 0;
+        /* box-sizing: border-box; */
+      }
+      body {
+        width: 100%;
+        background-color: antiquewhite;
+        font-family: "Open Sans", sans-serif;
+      }
+      .container {
+        width: 270px;
+        border: 2px solid black;
+        margin: 24px auto;
+        padding: 0 0.67em;
+      }
+      h1 {
+        text-align: center;
+      }
+      hr {
+        border-bottom: 1px solid #888989;
+        margin: 2px 0;
+      }
+      p {
+        display: flex;
+        justify-content: space-between;
+      }
+      .bold {
+        font-weight: 800;
+      }
+      .black {
+        background-color: black;
+      }
+      .large {
+        height: 10px;
+      }
+      .medium {
+        height: 5px;
+      }
+      .small-font {
+        font-size: 0.85rem;
+      }
+      .mini-font {
+        font-size: 0.67rem;
+      }
+      .large-font {
+        font-size: 2rem;
+      }
+      .right {
+        justify-content: end;
+      }
+      .child-content {
+        margin-left: 1em;
+      }
+      .calories-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      .calories-box span {
+        margin: -7px -2px;
+        font-size: 2.4em;
+        font-weight: 700;
+      }
+      .left-container p {
+        margin: -5px -2px;
+        font-size: 2em;
+        font-weight: 700;
+      }
+      footer{
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="bold large-font">Nutrition Facts</p>
+      <hr />
+      <p>8 servings per container</p>
+      <p>
+        <span class="bold">Serving size</span>
+        <span class="bold">2/3 cup (55g)</span>
+      </p>
+      <hr class="large black" />
+      <div class="calories-box">
+        <div class="left-container">
+          <h2 class="bold small-font">Amount per serving</h2>
+          <p>Calories</p>
+        </div>
+        <span class="">230</span>
+      </div>
+      <hr class="medium black" />
+      <div class="small-font">
+        <p class="right bold">% Daily Value *</p>
+        <hr />
+        <p>
+          <span><span class="bold">Total Fat</span> 8g</span>
+          <span class="bold">10%</span>
+        </p>
+        <hr />
+        <div class="child-content">
+          <p><span>Saturated Fat 1g</span><span class="bold">5%</span></p>
+          <hr />
+          <p><em>Trans Fat 0g</em></p>
+          <hr />
+        </div>
+        <p>
+          <span><span class="bold">Cholesterol</span> 0mg</span>
+          <span class="bold">0%</span>
+        </p>
+        <hr />
+        <p>
+          <span><span class="bold">Sodium</span> 160mg</span>
+          <span class="bold">7%</span>
+        </p>
+        <hr />
+        <p>
+          <span><span class="bold">Total Carbohydrate</span> 37g</span>
+          <span class="bold">13%</span>
+        </p>
+        <hr />
+        <div class="child-content">
+          <p>Total Sugars 12g</p>
+          <hr />
+          <p>
+            <span>Includes 10g Added Sugars</span><span class="bold">20%</span>
+          </p>
+          <hr />
+        </div>
+        <p><span class="bold">Protein</span> <span>3g</span></p>
+        <hr class="large black" />
+        <div>
+          <p><span>Vitamin D 2mcg</span><span>10%</span></p>
+          <hr />
+          <p><span>Calcium 260mg</span><span>20%</span></p>
+          <hr />
+          <p><span>Iron 8mg</span><span>45%</span></p>
+          <hr />
+          <p><span>Potassium 235mg</span>6%<span></span></p>
+        </div>
+        <hr class="medium black" />
+      </div>
+      <footer>
+        <p class="mini-font">
+          * The % Daily Value (DV) tells you how much a nutrient in a serving of
+          food contributes to a daily diet. 2,000 calories a day is used for
+          general nutrition advice.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
